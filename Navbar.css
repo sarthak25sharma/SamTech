@@ -1,43 +1,137 @@
-.navbar{
-    display: flex;
-    justify-content: space-around;
-    padding: 0 ;
-    margin-top: 0;
-    box-shadow: 0 1px 3px -2px black;
-    height: 80px;    
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-top: 0;
+  box-shadow: 0 1px 3px -2px #27A4EA;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: #ffffff;
+  z-index: 1000; /* Ensure navbar stays on top */
+  transition: background-color 0.3s ease;
 }
-.nav-logo{
-    display: flex;
-    align-items: center;
-    gap: 0;
 
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+  color: #ffffff; /* text color */
+  font-size: 20px;
+  font-weight: 500;
+  padding: 10px;
+  margin: 0;
+  padding-left: 5px;
 }
-.nav-logo h1{
-    font-size: 50px;
-    font-weight: 600;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+.nav-menu li:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #ffffff; /* White underline on hover */
 }
-.nav-menu{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: 40px;
-    color: #626262;
-    font-size: 20px;
-    font-weight: 500;
+
+.nav-menu.active {
+  padding-top: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed; /* Fixed position for sidebar */
+  top: 80px;
+  right: 0; /* Show sidebar on the right side */
+  width: 200px; /* Set desired width for sidebar */
+  height: calc(100vh - 80px); /* Take full height of viewport */
+  background-color: #27a4ea;
+  z-index: 999; /* Ensure menu stays on top */
+  transition: 0.3s ease all; /* Add smooth transition */
 }
-.nav-menu li{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3px;
-    cursor: pointer;
+
+.nav-menu li.active{
+  background-color: #fff;
+  color: #27A4EA; /* Set text color to blue */
+  border-radius: 20px; /* Add curved edges */
+  padding: 8px 16px; /* Adjust padding */ 
 }
-.nav-menu hr{
-    border: none;
-    width: 80%;
-    height: 3px;
-    border-radius: 10px;
-    background-color: #626262;
+
+.nav-menu.active li:hover {
+  cursor: pointer;
+  border-bottom: 3px solid #ffffff; /* White underline on hover */
+}
+
+.nav-menu.active li.active {
+  background-color: #ffffff; /* Set background color to white */
+  border-radius: 20px; /* Add curved edges */
+  padding: 8px 15px; /* Adjust padding */
+  color: #27a4ea; /* Set text color */
+}
+
+.nav-menu hr {
+  border: none;
+  width: 80%;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.menu {
+  display: none; /* Hide initially */
+}
+
+.menu:checked + .nav-icon .icon:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu:checked + .nav-icon .icon:nth-child(2) {
+  opacity: 0;
+}
+
+.menu:checked + .nav-icon .icon:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-icon {
+  cursor: pointer;
+  padding: 10px;
+  display: none; /* Hide by default */
+  z-index: 999; /* Stay visible over */
+  transition: background-color 0.3s ease; /* Transition for background color */
+}
+
+.icon {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+}
+
+/* Set SAMTECH color to black */
+.navbar .nav-logo h1 {
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none; /* Hide initially */
+  }
+
+  .nav-icon {
+    display: block; /* Show hamburger icon on small screens */
+  }
+
+  .menu:checked + .nav-icon .icon:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .menu:checked + .nav-icon .icon:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu:checked + .nav-icon .icon:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+  /* Show icons horizontally when menu is not active */
+  .navbar:not(.nav-menu.active) .nav-icon {
+    display: block;
+  }
 }
