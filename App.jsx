@@ -1,7 +1,8 @@
 
-import Navbar from './Navbar/Navbar'
+import Navbar from './Navbar.jsx'
 import './App.css'
-import Hero from './Hero/Hero.jsx'
+import Hero from './Hero.jsx'
+import Footer from './footer.jsx'
 
 
 
@@ -13,6 +14,7 @@ function App() {
     
     <Navbar/>
     <Hero/>
+    <Footer/>
  
 
     
