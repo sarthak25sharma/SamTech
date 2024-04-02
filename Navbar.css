@@ -4,22 +4,25 @@
   align-items: center;
   padding: 0;
   margin-top: 0;
-  box-shadow: 0 1px 3px -2px #27A4EA;
-  height: 80px;
+  height: auto;
+  box-shadow: 0 1px 3px -2px #ffffff;
   position: fixed;
   width: 100%;
   top: 0;
-  background-color: #ffffff;
+  background-color: #ffffff; /* Set background color to white */
   z-index: 1000; /* Ensure navbar stays on top */
   transition: background-color 0.3s ease;
 }
+
+
 
 .nav-menu {
   display: flex;
   align-items: center;
   list-style: none;
+  margin-top: auto;
   gap: 30px;
-  color: #ffffff; /* text color */
+  color: #000000; /* Set text color to orange */
   font-size: 20px;
   font-weight: 500;
   padding: 10px;
@@ -29,7 +32,7 @@
 
 .nav-menu li:hover {
   cursor: pointer;
-  border-bottom: 3px solid #ffffff; /* White underline on hover */
+  border-bottom: 3px solid #000000; /* White underline on hover */
 }
 
 .nav-menu.active {
@@ -37,32 +40,32 @@
   display: flex;
   flex-direction: column;
   position: fixed; /* Fixed position for sidebar */
-  top: 80px;
+  top: 75px;
   right: 0; /* Show sidebar on the right side */
   width: 200px; /* Set desired width for sidebar */
   height: calc(100vh - 80px); /* Take full height of viewport */
-  background-color: #27a4ea;
+  background-color: #ffffff;
   z-index: 999; /* Ensure menu stays on top */
   transition: 0.3s ease all; /* Add smooth transition */
 }
 
-.nav-menu li.active{
-  background-color: #fff;
-  color: #27A4EA; /* Set text color to blue */
+.nav-menu li.active {
+  background-color: #ffffff; /* Set background color to white */
+  color: #000000; /* Set text color to orange */
   border-radius: 20px; /* Add curved edges */
-  padding: 8px 16px; /* Adjust padding */ 
+  padding: 8px 16px; /* Adjust padding */
 }
 
 .nav-menu.active li:hover {
   cursor: pointer;
-  border-bottom: 3px solid #ffffff; /* White underline on hover */
+  border-bottom: 3px solid #000000; /* White underline on hover */
 }
 
 .nav-menu.active li.active {
-  background-color: #ffffff; /* Set background color to white */
+  background-color: #bfbfbf; /* Set background color to white */
   border-radius: 20px; /* Add curved edges */
   padding: 8px 15px; /* Adjust padding */
-  color: #27a4ea; /* Set text color */
+  color: #000000; /* Set text color to blue */
 }
 
 .nav-menu hr {
@@ -70,7 +73,7 @@
   width: 80%;
   height: 3px;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #000000; /* Set background color to white */
 }
 
 .menu {
@@ -100,7 +103,7 @@
 .icon {
   width: 30px;
   height: 5px;
-  background-color: #fff;
+  background-color: #000000; /* Set background color to orange */
   margin: 6px 0;
 }
 
@@ -115,23 +118,6 @@
   }
 
   .nav-icon {
-    display: block; /* Show hamburger icon on small screens */
-  }
-
-  .menu:checked + .nav-icon .icon:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .menu:checked + .nav-icon .icon:nth-child(2) {
-    opacity: 0;
-  }
-
-  .menu:checked + .nav-icon .icon:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  /* Show icons horizontally when menu is not active */
-  .navbar:not(.nav-menu.active) .nav-icon {
     display: block;
   }
 }

@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-  const [selectedItem, setSelectedItem] = useState(""); // Track selected item
+  const [selectedItem, setSelectedItem] = useState("");
   const menuRef = useRef();
 
   const toggleMenu = () => {
@@ -31,9 +31,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar" style={{ backgroundColor: "#27A4EA" }}>
-        <div className="nav-logo">
-          <h1 style={{ color: "#fff" }}>SAMTECH</h1>
+      <div className="navbar" style={{ backgroundColor: "#bfbfbf", position: "fixed"}}>
+        <div className="nav-logo" style={{"padding": "8-px", "marginLeft": "50px"}}>
+          <h1 style={{ color: "#000000" }}>SAMTECH</h1>
         </div>
         <ul className={`nav-menu ${isActive ? "active" : ""}`} ref={menuRef}>
           <li
