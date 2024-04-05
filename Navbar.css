@@ -12,6 +12,7 @@
   background-color: #ffffff; /* Set background color to white */
   z-index: 1000; /* Ensure navbar stays on top */
   transition: background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -50,7 +51,7 @@
 }
 
 .nav-menu li.active {
-  background-color: #ffffff; /* Set background color to white */
+  background-color: #bfbfbf; /* Set background color to white */
   color: #000000; /* Set text color to orange */
   border-radius: 20px; /* Add curved edges */
   padding: 8px 16px; /* Adjust padding */

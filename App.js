@@ -4,6 +4,7 @@ import './App.css'
 import Hero from './Hero.jsx'
 import Footer from './footer.jsx'
 import Product from './product.jsx'
+import Infra  from './infra.jsx'
 
 
 
@@ -16,6 +17,7 @@ function App() {
     <Navbar/>
     <Hero/>
     <Product/>
+    <Infra/>
     <Footer/>
     
     </>

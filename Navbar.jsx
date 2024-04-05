@@ -31,7 +31,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar" style={{ backgroundColor: "#bfbfbf", position: "fixed"}}>
+      <div className="navbar" style={{ backgroundColor: "#7f7f7f", position: "fixed"}}>
         <div className="nav-logo" style={{"padding": "8-px", "marginLeft": "50px"}}>
           <h1 style={{ color: "#000000" }}>SAMTECH</h1>
         </div>
