@@ -55,16 +55,10 @@ const Navbar = () => {
             INFRASTRUCTURE
           </li>
           <li
-            onClick={() => handleMenuItemClick("BLOG")}
-            className={selectedItem === "BLOG" ? "active" : ""}
+            onClick={() => handleMenuItemClick("Business")}
+            className={selectedItem === "Business" ? "active" : ""}
           >
-            BLOG
-          </li>
-          <li
-            onClick={() => handleMenuItemClick("CAREERS")}
-            className={selectedItem === "CAREERS" ? "active" : ""}
-          >
-            CAREERS
+            Business
           </li>
           <li
             onClick={() => handleMenuItemClick("CONTACT US")}

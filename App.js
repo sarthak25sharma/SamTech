@@ -5,6 +5,7 @@ import Hero from './Hero.jsx'
 import Footer from './footer.jsx'
 import Product from './product.jsx'
 import Infra  from './infra.jsx'
+import About from './about.jsx'
 
 
 
@@ -18,6 +19,7 @@ function App() {
     <Hero/>
     <Product/>
     <Infra/>
+    <About/>
     <Footer/>
     
     </>
