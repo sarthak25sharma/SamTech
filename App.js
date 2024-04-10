@@ -6,7 +6,7 @@ import Footer from './footer.jsx'
 import Product from './product.jsx'
 import Infra  from './infra.jsx'
 import About from './about.jsx'
-
+import InfraPage from './infra_page.jsx'
 
 
 
@@ -16,10 +16,7 @@ function App() {
     <>
     
     <Navbar/>
-    <Hero/>
-    <Product/>
-    <Infra/>
-    <About/>
+    <InfraPage/>
     <Footer/>
     
     </>

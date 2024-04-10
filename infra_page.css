@@ -1,0 +1,135 @@
+.about-us-container {
+  height: auto;
+  max-width: auto;
+  margin: 0 auto;
+  padding: 2%;
+  border-radius: 5%; /* Rounded corners for the container */
+  /* Border shadow for the container */
+  box-shadow: 5% 5% 5% rgba(0, 0, 0, 0.3);
+}
+
+.company-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+  border-radius: 20px; /* Rounded corners for the container */
+  /* Border shadow for the container */
+  box-shadow: 5% 5% 5% rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
+  background: #404040;
+}
+
+.company-info-content {
+  flex: 1;
+  margin: 2%;
+  color: #ffffff;
+}
+
+.company-info h2 {
+  font-size: 3em; /* Adjust font size as needed */
+  margin-bottom: 10px;
+}
+
+.company-info p {
+  margin-bottom: 15px;
+}
+
+.company-info-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1%; /* Rounded corners for the image container */
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-right: 1%;
+  /* Hide overflow to prevent shadows from overflowing */
+  /* Border shadow for the image container */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  background: #7f7f7f;
+  position: relative;
+}
+
+.company-info-image img {
+  max-width: 100%;
+  border-radius: 20px; /* Rounded corners for the image */
+}
+
+.photos h2,
+.infrastructure h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding-bottom: 2%;
+}
+
+.photo-gallery img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.infrastructure-details p {
+  margin-bottom: 15px;
+  padding: 2%;
+}
+
+.card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden; /* Hide overflow */
+  background-color: #404040;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease;
+  background-color: #404040; /* Add transition for opacity */
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Add transition for opacity */
+}
+
+.card:hover img {
+  opacity: 0; /* Hide image on hover */
+}
+
+.card:hover .card-content {
+  opacity: 1; /* Show content on hover */
+}
+
+.infrastructure-details-box {
+  padding: 2%; /* Adjust padding as needed */
+  background-color: #404040; /* Background color for the box */
+  color: #ffffff;
+  border-radius: 20px; /* Rounded corners for the box */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Border shadow for the box */
+}
+
+.infrastructure-details {
+  margin-top: 40px; /* Increase the top margin to add a little gap */
+  margin-bottom: 20px; /* Add margin between infrastructure details and cards above */
+  border-radius: 20px;
+  background-color: #7f7f7f;
+}
+
+.infrastructure-details p {
+  margin-bottom: 15px;
+  padding: 2%;
+  color: #ffffff; /* Color the text as white */
+}

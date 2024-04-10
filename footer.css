@@ -79,7 +79,7 @@
     display: block;
     background-color: #404040;
     color: #fff;
-    padding: 8px 16px; /* Decreased padding */
+    padding: 3%; /* Decreased padding */
     border-radius: 5px;
     text-decoration: none;
     font-size: 1rem; /* Decreased font size */
@@ -93,7 +93,7 @@
   
   .contact-us form button {
     width: 100%;
-    padding: 5px;
+    padding: 10%;
     border: none;
     border-radius: 5px;
     background-color: #404040;
