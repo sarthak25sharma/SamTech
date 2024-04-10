@@ -1,0 +1,28 @@
+
+.row{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.heading{
+    font-size: 60px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    
+}
+.f-normal{
+    font-size: 60px;
+    font-weight: 300;
+    
+}
+.product-text{
+    padding: 10px;
+}
+.hrtag{
+    padding: 20px;
+}
