@@ -1,28 +1,27 @@
-
-.row{
-    padding-top: 10px;
+.main-heading{
+    
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    
+}
+.card-textm{
+    font-size: 30px;
+    
+}
+.ratings{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.card-text{
+    font-size: 20px;
+}
+.image-col{
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 30%;
     
-    
-}
-
-.heading{
-    font-size: 60px;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    
-}
-.f-normal{
-    font-size: 60px;
-    font-weight: 300;
-    
-}
-.product-text{
-    padding: 10px;
-}
-.hrtag{
-    padding: 20px;
 }
