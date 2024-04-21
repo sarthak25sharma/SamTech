@@ -8,15 +8,14 @@ function ProductSection() {
       <div className='main-products'>
         <div className='card-div'>
         <div className="card mb-3" >
-          <div className="row g-0">
-            <div className="image-col">
-              <img src="./Hero.jpg" className="img-fluid " alt="..." />
+          <div className="row g-0 border-0">
+            <div className="image-col border-0">
+              <img src="./thumbnail.jpg" className="img-fluid mx-auto " alt="..." />
             </div>
           <div className="col-md-8">
             <div className="card-body">
               <h2 className="card-title">Card title</h2>
               <p className="card-textm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias ab dolore perferendis similique iste possimus cupiditate modi dignissimos, aliquid et, pariatur, animi alias facere id quisquam excepturi. Aperiam, doloribus voluptas..</p>
-              <p className="card-textm"><small className="text-body-secondary">Last updated 3 mins ago</small></p>
             </div>
           </div>
         </div>
@@ -112,7 +111,7 @@ function ProductSection() {
             <div class="col">
               <div class="card shadow-sm">
                 <div class="card-body">
-                  <h3>Variable Voltage </h3>
+                  <h3>Variable Voltage Tranfromer</h3>
                   
                   <div class="d-flex justify-content-between align-items-center"> 
                   </div>
@@ -147,7 +146,7 @@ function ProductSection() {
               <div class="card shadow-sm">
                 
                 <div class="card-body">
-                <h3>Variable Auto </h3>
+                <h3>Variable Auto Tranfromer</h3>
                   
                   <div class="d-flex justify-content-between align-items-center">
                     
@@ -184,7 +183,7 @@ function ProductSection() {
               <div class="card shadow-sm">
                 
                 <div class="card-body">
-                <h3>Three Phase Isolation </h3>
+                <h3>Three Phase Isolation Tranfromer</h3>
                   
                   <div class="d-flex justify-content-between align-items-center">
                     
@@ -196,7 +195,7 @@ function ProductSection() {
               <div class="card shadow-sm">
               
                 <div class="card-body">
-                <h3>Sinlge Phase Isolation </h3>
+                <h3>Sinlge Phase Isolation Tranfromer</h3>
                   
                   <div class="d-flex justify-content-between align-items-center">
                     
@@ -208,7 +207,7 @@ function ProductSection() {
               <div class="card shadow-sm">
               
                 <div class="card-body">
-                <h3>Dry air cooled</h3>
+                <h3>Dry air cooled Tranfromer</h3>
                   
                   <div class="d-flex justify-content-between align-items-center">
                     
