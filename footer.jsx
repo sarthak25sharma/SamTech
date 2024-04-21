@@ -1,27 +1,55 @@
 import React from 'react';
 import './footer.css';
+import { FaFacebook, FaPhoneAlt } from "react-icons/fa"; // npm install react-icons --save
+import { SiGmail } from "react-icons/si";
+import { MdFactory, MdContacts } from "react-icons/md";
 
 const ContactUs = () => (
   <div className="contact-us">
-    <h3>Contact Us</h3>
-    <p><span>SAMTECH BEST COMPANY FR FR</span></p>
+    <h3><MdContacts/> Contact Us</h3>
+    <p>
+      <span className="facebook-logo">
+        <FaFacebook />
+      </span>{" "}
+      <a href="https://www.facebook.com/siunnao/"> Samtech Industries</a>
+    </p>
     <form>
       <input type="text" name="name" placeholder="Name" />
       <input type="email" name="email" placeholder="Email" />
       <input type="tel" name="phone" placeholder="Phone Number" />
-      <button type="submit" className="button">Submit</button>
+      <button type="submit" className="button">
+        Submit
+      </button>
     </form>
     <ul>
       <li>
-        <a href="mailto:agraney22044@iiitd.ac.in">
-          SAMTECH CORP<br/><br/>
-          agraney22044@iiitd.ac.in<br/>
-          +919205363113<br/>
-          Something Something New Delhi<br/>
-          <a href="https://www.google.com/maps/place/70+Wapping+Wall,+London+E1W+3SS/@51.5086197,-0.0549825,17z/data=!3m1!4b1!4m5!3m4!1s0x47d8a00baf21de75:0x5296a7cd9df8e54!8m2!3d51.5086197!4d-0.0527938" target="_blank" rel="noopener noreferrer">
-          SEE US ON MAP
-          </a>
+        <a
+          href="https://www.google.com/maps/search/N-17,18,+Automobile+Complex,+Site+1,+Industrial+Area,+Unnao-+209801,+Uttar+Pradesh/@26.5440517,80.3193122,11z/data=!3m1!4b1?entry=ttu"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <MdFactory className="factory-icon" />
+          N-17,18, Automobile Complex, Site 1, <br />
+          Industrial Area, Unnao- 209801, Uttar Pradesh
+          <br />
         </a>
+        <br />
+        <div className="contact-info">
+          <SiGmail className="gmail-icon" />
+          <div>
+            <a href="mailto:samtechindustries07@gmail.com">
+              samtechindustries07@gmail.com
+            </a>
+            <a href="mailto:siunnao@gmail.com">siunnao@gmail.com</a>
+          </div>
+        </div>
+        <div className="contact-info">
+          <FaPhoneAlt className="phone-icon" />
+          <div>
+            <a href="tel:+919811798030">+91 98117 98030</a>
+            <a href="tel:+917651801907">+91 76518 01907</a>
+          </div>
+        </div>
       </li>
     </ul>
   </div>
