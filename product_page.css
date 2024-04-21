@@ -6,9 +6,17 @@
     padding: 2%;
     
 }
+.card-div{
+    border: 0px;
+   
+}
 .card-textm{
     font-size: 30px;
     
+}
+.card-title{
+    font-size: 45px;
+    padding-top: 5px;
 }
 .ratings{
     display: flex;
@@ -23,5 +31,19 @@
     align-items: center;
     justify-content: center;
     width: 30%;
+    
+}
+.image-col img{
+    padding: 3px;
+}
+.other-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+.other-products h3{
+    font-size: 22px;
+
     
 }
