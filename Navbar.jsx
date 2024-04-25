@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Navbar.css";
+import { BrowserRouter as Router,Route, Link,Switch } from "react-router-dom";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
@@ -40,37 +41,37 @@ const Navbar = () => {
             onClick={() => handleMenuItemClick("HOME")}
             className={selectedItem === "HOME" ? "active" : ""}
           >
-            HOME
+            <Link to = "/home">HOME</Link>
           </li>
           <li
             onClick={() => handleMenuItemClick("PRODUCTS")}
             className={selectedItem === "PRODUCTS" ? "active" : ""}
           >
-            PRODUCTS
+            <Link to="/products">PRODUCTS</Link>
           </li>
           <li
             onClick={() => handleMenuItemClick("INFRASTRUCTURE")}
             className={selectedItem === "INFRASTRUCTURE" ? "active" : ""}
           >
-            INFRASTRUCTURE
+            <Link to="/infrastructure">INFRASTRUCTURE</Link>
           </li>
-          <li
+          {/* <li
             onClick={() => handleMenuItemClick("Business")}
             className={selectedItem === "Business" ? "active" : ""}
           >
-            Business
-          </li>
+            <Link to="/business">BUSINESS</Link>
+          </li> */}
           <li
             onClick={() => handleMenuItemClick("CONTACT US")}
             className={selectedItem === "CONTACT US" ? "active" : ""}
           >
-            CONTACT US
+            <Link to="/contactus">CONTACT US</Link>
           </li>
           <li
             onClick={() => handleMenuItemClick("ABOUT US")}
             className={selectedItem === "ABOUT US" ? "active" : ""}
           >
-            ABOUT US
+            <Link to="/aboutus">ABOUT US</Link>
           </li>
         </ul>
         <label
