@@ -1,0 +1,27 @@
+.infra-container {
+    background-color: #ffff; /* Background color */
+    padding: 5%; /* Padding */
+    border-radius: 10px; /* Rounded edges */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Shadow-like glow */
+    width: 80%; /* Adjust width */
+    height: auto; /* Adjust height */
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carousel-container {
+    border: 1px solid #bfbfbf; /* Add border */
+    height: 200px; /* Adjust height */
+    overflow: hidden; /* Hide overflow content */
+    border-radius: 10px; /* Rounded edges */
+  }
+  
+  .infra-heading {
+    font-size: 250%; /* Font size */
+    font-weight: bold; /* Font weight */
+    text-align: center; /* Center align */
+    margin-top: -30px; /* Shift up */
+    text-decoration: underline #bfbfbf; /* Underline */
+    padding: 2%;
+  }
