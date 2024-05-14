@@ -1,0 +1,60 @@
+.main-heading{
+    
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+    
+}
+.card-div{
+    border: 0px;
+   
+}
+.card-textm{
+    font-size: 30px;
+    
+}
+.card-title{
+    font-size: 45px;
+    padding-top: 5px;
+}
+.ratings{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+}
+.card-text{
+    font-size: 20px;
+}
+.image-col{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    
+}
+.image-col img{
+    padding: 3px;
+}
+.other-products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    
+
+}
+.other-image{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('./a.jpeg');
+    width: 100%;
+    height: 200%;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+
+}
+.other-products h3{
+    font-size: 22px;
+
+    
+}
