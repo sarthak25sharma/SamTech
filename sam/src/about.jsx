@@ -2,7 +2,7 @@ import React from "react";
 import "./product_page.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "../Navbar/Navbar";
-function ProductSection() {
+function AboutSection() {
   return (
     <>
       <div className="container">
@@ -255,4 +255,4 @@ function ProductSection() {
   );
 }
 
-export default ProductSection;
+export default AboutSection;
