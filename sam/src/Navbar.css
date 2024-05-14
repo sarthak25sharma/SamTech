@@ -16,6 +16,13 @@
 }
 
 
+.nav-menu a {
+  color: #000000; /* Set text color to black */
+}
+
+.nav-menu li.active a {
+  color: #000000; /* Set text color to black */
+}
 
 .nav-menu {
   display: flex;
