@@ -32,7 +32,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="navbar" style={{ backgroundColor: "#7f7f7f", position: "fixed"}}>
+      <div className="navbar" style={{ position: "fixed"}}>
         <div className="nav-logo" style={{"padding": "8-px", "marginLeft": "50px"}}>
           <h1 style={{ color: "#000000" }}>SAMTECH</h1>
         </div>
@@ -41,19 +41,19 @@ const Navbar = () => {
             onClick={() => handleMenuItemClick("HOME")}
             className={selectedItem === "HOME" ? "active" : ""}
           >
-            <Link to = "/home">HOME</Link>
+            <Link className='link' to = "/home">HOME</Link>
           </li>
           <li
             onClick={() => handleMenuItemClick("PRODUCTS")}
             className={selectedItem === "PRODUCTS" ? "active" : ""}
           >
-            <Link to="/products">PRODUCTS</Link>
+            <Link className='link'  to="/products">PRODUCTS</Link>
           </li>
           <li
             onClick={() => handleMenuItemClick("INFRASTRUCTURE")}
             className={selectedItem === "INFRASTRUCTURE" ? "active" : ""}
           >
-            <Link to="/infrastructure">INFRASTRUCTURE</Link>
+            <Link className='link' to="/infrastructure">INFRASTRUCTURE</Link>
           </li>
           {/* <li
             onClick={() => handleMenuItemClick("Business")}
@@ -65,13 +65,13 @@ const Navbar = () => {
             onClick={() => handleMenuItemClick("CONTACT US")}
             className={selectedItem === "CONTACT US" ? "active" : ""}
           >
-            <Link to="/contactus">CONTACT US</Link>
+            <Link className='link' to="/contactus">CONTACT US</Link>
           </li>
           <li
             onClick={() => handleMenuItemClick("ABOUT US")}
             className={selectedItem === "ABOUT US" ? "active" : ""}
           >
-            <Link to="/aboutus">ABOUT US</Link>
+            <Link className='link' to="/aboutus">ABOUT US</Link>
           </li>
         </ul>
         <label
