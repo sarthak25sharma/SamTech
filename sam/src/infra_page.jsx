@@ -3,9 +3,13 @@ import './infra_page.css';
 const InfraPage = () => {
   return (
     <div className="about-us-container">
+      <div>
+        <hr></hr>
+      <h1 className='h1main' >ABOUT OUR COMPANY</h1>
+      <hr></hr>
+      </div>
       <section className="company-info">
         <div className="company-info-content">
-          <h1 style={{ marginBottom: '5%' }}>About Our Company</h1>
           <p>
             Samtech Industries, established in 1996, has grown into a leading provider of comprehensive electrical solutions. 
             <br/>
@@ -17,10 +21,13 @@ const InfraPage = () => {
           </p>
         </div>
         <div className="company-info-image">
-          <img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/294338104_417719993707687_4297989827577634391_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=5f2048&_nc_ohc=9B1j2-KedxgAb7RF8hk&_nc_ht=scontent.fdel29-1.fna&oh=00_AfAmlj_j7pSYfre5jouKQwIJp6zKIHLAYQyPrNnB0eL3ow&oe=662A9A51" alt="Company" />
+          <img src='./Hero.jpg' alt="Company" />
         </div>
       </section>
 
+      <hr></hr>
+      <h1 className='h1main' >OUR PATNERS</h1>
+      <hr></hr>
       <section className="photos">
   <div className="photo-gallery">
     <div className="card">
@@ -66,92 +73,116 @@ const InfraPage = () => {
   </div>
 </section>
 
-
-<section className="infrastructure">
-  <div className="infrastructure-details-box">
-    <h1>Our Infrastructure</h1>
-    <p>
-      At Samtech Industries, we understand the critical role transformers play in your
+<div className="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+  <div className="col d-flex flex-column align-items-start gap-2">
+    <h1 className="h1maininfra">OUR INFRASTRUCTURE </h1>
+    <p className="infratext text-body-secondary">At Samtech Industries, we understand the critical role transformers play in your
 electrical infrastructure. That's why we're dedicated to providing you with
 industry-leading transformer solutions designed to meet your specific needs and
-exceed expectations.
+exceed expectations.</p>
+    
+  </div>
 
-      </p>
-    <div className="text-gallery">
-      
-      <div className="infrastructure-card">
-        <div className="infrastructure-card-content">
-        <h3>Exceptional Efficiency</h3>
-          <p> Our transformers are
-designed to minimize energy losses, <br/>saving you
-money on your operating costs</p>
+  <div className="col">
+    <div className="row row-cols-1 row-cols-sm-2 g-4">
+      <div className="col d-flex flex-column gap-2">
+        <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+          <svg className="block" width="1em" height="1em">
+            
+          </svg>
         </div>
+        <h4 className="fw-semibold mb-0 text-body-emphasis">Exceptional Efficiency</h4>
+        <p className="infratext text-body-secondary"> Our transformers are
+designed to minimize energy losses,saving you
+money on your operating costs</p>
       </div>
-      <div className="infrastructure-card">
-        <div className="infrastructure-card-content">
-          <h3>Unmatched Durability</h3>
-          <p> Built with robust
-construction and premium materials, <br/>Samtech
+
+      <div className="col d-flex flex-column gap-2">
+        <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+          <svg className="bi" width="1em" height="1em">
+            <use xlinkHref="#gear-fill"></use>
+          </svg>
+        </div>
+        <h4 className="fw-semibold mb-0 text-body-emphasis">Unmatched Durability</h4>
+        <p className="infratext text-body-secondary">Built with robust
+construction and premium materials, Samtech
 transformers are built to withstand even the
-most demanding environments.
-</p>
-        </div>
+most demanding environments..</p>
       </div>
-      <div className="infrastructure-card"> {/* Add 'small' class */}
-        <div className="infrastructure-card-content"> {/* Add 'small' class */}
-        <h3>Competitive Pricing</h3>
-          <p> Our transformers are
-designed to minimize energy losses, <br/>saving you
-money on your operating costs</p>
-        </div>
-      </div>
-      <div className="infrastructure-card"> {/* Add 'small' class */}
-        <div className="infrastructure-card-content"> {/* Add 'small' class */}
-        <h3>Rigorous Testing</h3>
-          <p> Our transformers undergo
-comprehensive testing at recognized and
-authorized laboratories like CPRI and ERDA, <br/>ensuring they meet the highest safety and
-performance standards.
 
-</p>
+      <div className="col d-flex flex-column gap-2">
+        <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+          <svg className="bi" width="1em" height="1em">
+            <use xlinkHref="#speedometer"></use>
+          </svg>
         </div>
+        <h4 className="fw-semibold mb-0 text-body-emphasis">Competitive Pricing</h4>
+        <p className="infratext  text-body-secondary">Our transformers are
+designed to minimize energy losses,saving you
+money on your operating costs</p>
+      </div>
+
+      <div className="col d-flex flex-column gap-2">
+        <div className="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+          <svg className="bi" width="1em" height="1em">
+            <use xlinkHref="#table"></use>
+          </svg>
+        </div>
+        <h4 className="fw-semibold mb-0 text-body-emphasis">Rigorous Testing</h4>
+        <p className="infratext text-body-secondary">Our transformers undergo
+comprehensive testing at recognized and
+authorized laboratories like CPRI and ERDA, ensuring they meet the highest safety and
+performance standards.</p>
       </div>
     </div>
   </div>
-</section>
+</div>
 
 
-<section className="founder">
-        <div className="founder-gallery">
-        <h2>FOUNDERS</h2>
-          <div className="founder-card">
-            <img src="f1.jpg" alt="Founder 1" />
-            <div className="card-content">
-            </div>
-              <p style={{ fontWeight: 'bold', fontSize: '1.1em', margin: '5px 0' }}>[Founder's Name]</p>
-              <p style={{ fontSize: '1em', margin: '5px 0' }}>[Founder's Position]</p>
-              <br/>
-          </div>
+  <hr />
+  <h1 className='h1main' >OUR FOUNDERS</h1>
 
-          <div className="founder-card">
-            <img src="f2.jpg" alt="Founder 2" />
-            <div className="card-content">
-            </div>
-            <p style={{ fontWeight: 'bold', fontSize: '1.1em', margin: '5px 0' }}>[Founder's Name]</p>
-              <p style={{ fontSize: '1em', margin: '5px 0' }}>[Founder's Position]</p>
-              <br/>
-          </div>
+<div className=" founder row g-4 py-5 row-cols-1 row-cols-lg-3">
+  <div className="feature col">
+    <div className=" fimg feature-icon d-inline-flex align-items-center justify-content-center  fs-2 mb-3">
+      <img className='w-50 h-50' src='./f1.jpg' alt='founder1'/>
+    </div>
+    <div>
+      
+    <h3 className="fs-2 text-body-emphasis">Featured title</h3>
+    
+    </div>
+    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+    
+  </div>
 
-          <div className="founder-card">
-            <img src="f3.jpg" alt="Founder 3" />
-            <div className="card-content">
-            </div>
-            <p style={{ fontWeight: 'bold', fontSize: '1.1em', margin: '5px 0' }}>[Founder's Name]</p>
-              <p style={{ fontSize: '1em', margin: '5px 0' }}>[Founder's Position]</p>
-              <br/>
-          </div>
-        </div>
-      </section>
+  <div className="feature col">
+    <div className="fimg feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3">
+      <img className='w-50 h-50' src='./f1.jpg' alt='founder2'/>
+    </div>
+    <h3 className="fs-2 text-body-emphasis">Featured title</h3>
+    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+    
+  </div>
+
+  <div className="feature col">
+    <div className="fimg feature-icon d-inline-flex align-items-center justify-content-center  bg-gradient fs-2 mb-3">
+    <img  className='w-50 h-50' src='./f1.jpg' alt='founder3'/>
+    </div>
+    <h3 className="fs-2 text-body-emphasis">Featured title</h3>
+    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+    
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
 
 
 
