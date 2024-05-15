@@ -1,6 +1,7 @@
 import React from 'react';
 import "./product_page.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import transition from './transition';
 function ProductSection() {
   return (
     <div className='container'>
@@ -222,4 +223,4 @@ function ProductSection() {
   );
 }
 
-export default ProductSection;
+export default transition(ProductSection);

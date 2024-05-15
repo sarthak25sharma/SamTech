@@ -7,6 +7,8 @@ import { BrowserRouter as Router,Route , Routes } from 'react-router-dom'
 import About from './about.jsx'
 import Infra from './infra.jsx'
 import Product from './product.jsx'
+import InfraPage from './infra_page.jsx'
+import { AnimatePresence } from 'framer-motion';
 
 
 function App() {
@@ -15,18 +17,15 @@ function App() {
     <>
     <Router>
     <Navbar/>
-    <Hero/>
+    <AnimatePresence mode="wait">
     <Routes>
-        <Route path='/aboutus'>  
-          <About/>
-        </Route>
-        <Route path='/infrastructure'>
-          <Infra/>
-        </Route>
-        <Route path='/products'>
-          <Product/>
-        </Route>
+        <Route path="/" element={<Hero/>}/>
+        <Route path="/home" element={<Hero/>}/>
+        <Route path='/quality' element={<About/>}/>  
+        <Route path='/infrastructure' element={<InfraPage/>}/>
+        <Route path='/products' element={<Product/>}/>
     </Routes>
+    </AnimatePresence>
     <Footer/>
     </Router>
     </>
