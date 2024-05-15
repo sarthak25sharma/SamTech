@@ -7,40 +7,44 @@
   /* Border shadow for the container */
   box-shadow: 5% 5% 5% rgba(0, 0, 0, 0.3);
 }
+.h1main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.com-info{
+  height: 200px;
+}
 
 .company-info {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
   margin-bottom: 40px;
   border-radius: 20px; /* Rounded corners for the container */
   /* Border shadow for the container */
   box-shadow: 5% 5% 5% rgba(0, 0, 0, 0.3);
   margin-top: 5%;
-  background: #404040;
+  background: #e7e7e7;
+  font-size: 30px;
 }
 
 .company-info-content {
   flex: 1;
   margin: 0 2% 2% 2%;
-  color: #ffffff;
+  color: #010101;
   display: flex; /* Add display flex */
   flex-direction: column; /* Arrange content in a column */
 }
 
-.company-info h1 {
-  font-size: 3em; /* Adjust font size as needed */
-  
- /* Center the heading */
-  padding-left: 1%;
-  margin-top: 0;
-  color : #ffffff;
-  display:flex;
-}
+
+
 
 .company-info p {
-  margin-bottom: 10px;
+  
   text-align: justify; /* Justify the text */
-  font-size: large;
+  font-size: 20px;
+
 }
 
 .company-info-image {
@@ -53,15 +57,15 @@
   margin-right: 1%;
   width: 50%;
   height: 50%;
-
-  /* Hide overflow to prevent shadows from overflowing */
-  /* Border shadow for the image container */
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
-  background: #7f7f7f;
+ 
+  border-radius: 30px;
+  
   position: relative;
 }
 
+.photos{
+  margin-bottom: 20px;
+}
 .company-info-image img {
   max-width: 100%;
   border-radius: 20px; /* Rounded corners for the image */
@@ -73,14 +77,9 @@
   margin-bottom: 20px;
 }
 
-.founder h2{
-  font-size: 2.5em; /* Adjust font size as needed */
-  padding-top: 2.5%;
-  padding-bottom: 1%;
- /* Center the heading */
-  padding-left: 1%;
-  margin-top: 0;
-  display:flex;
+
+.fimg{
+  background-color:white;
 }
 
 
@@ -200,27 +199,6 @@
 }
 
 
-.founder {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin-top: 40px;
-}
-
-
-.founder-card {
-  width: 200px; /* Adjust width as needed */
-  margin: 20px;
-  border-radius: 20px;
-  overflow: hidden;
-}
-
-.founder-card img {
-  width: 100%;
-  height: auto;
-}
-
 .card-content {
   text-align: center;
   padding: 10px;
@@ -232,3 +210,14 @@
   margin: 5px 0;
 }
 
+.founder h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h1maininfra{
+  font-size: 60px;
+}
+.infratext{
+  font-size: 20px;
+}
