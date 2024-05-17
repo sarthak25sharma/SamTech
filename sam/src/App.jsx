@@ -4,9 +4,12 @@ import './App.css'
 import Hero from './Hero.jsx'
 import Footer from './footer.jsx'
 import { BrowserRouter as Router,Route , Routes } from 'react-router-dom'
+import ProductSection from './product_page.jsx'
 import About from './about.jsx'
-import Infra from './infra.jsx'
+import InfraPage from './infra_page.jsx'
 import Product from './product.jsx'
+import Infra from './infra.jsx'
+import Cover from './cover.jsx'
 
 
 function App() {
@@ -17,9 +20,13 @@ function App() {
     <Navbar/>
     <Hero/>
     <Routes>
+        <Route path='/Home'   element={[
+          <Cover key='Cover'/>,
+          <Product key="Product" />,
+          <Infra key="Infra" />,]}/>  
         <Route path='/aboutus' element={<About/>}/>  
-        <Route path='/infrastructure' element={<Infra/>}/>
-        <Route path='/products' element={<Product/>}/>
+        <Route path='/infrastructure' element={<InfraPage/>}/>
+        <Route path='/products' element={<ProductSection/>}/>
     </Routes>
     <Footer/>
     </Router>
