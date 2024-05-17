@@ -1,36 +1,31 @@
 import React from 'react';
-import { CCarousel, CCarouselItem, CCarouselCaption } from '@coreui/react'; /*use npm install  @coreui/react*/
-import './infra.css';
-
-function Infra() {
+import 'bootstrap/dist/css/bootstrap.min.css';
+const Infra = () => {
   return (
-    <div className="infra-container">
-      <h2 className="infra-heading"><b>OUR INFRASTRUCTURE</b></h2>
-      <CCarousel controls indicators dark>
-        <CCarouselItem>
-          <img className="d-block w-100" src={'./hero.jpg'} alt="slide 1" />
-          <CCarouselCaption className="d-none d-md-block">
-            <h5>Fist one</h5>
-            <p>eat</p>
-          </CCarouselCaption>
-        </CCarouselItem>
-        <CCarouselItem>
-          <img className="d-block w-100" src={'./hero.jpg'} alt="slide 2" />
-          <CCarouselCaption className="d-none d-md-block">
-            <h5>Second one</h5>
-            <p>sleep</p>
-          </CCarouselCaption>
-        </CCarouselItem>
-        <CCarouselItem>
-          <img className="d-block w-100" src={'./hero.jpg'} alt="slide 3" />
-          <CCarouselCaption className="d-none d-md-block">
-            <h5>Third one</h5>
-            <p>repeat</p>
-          </CCarouselCaption>
-        </CCarouselItem>
-      </CCarousel>
+    <div className="container col-xxl-8 px-4 py-5">
+      <div className="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div className="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./Hero.jpg"
+            className="d-block mx-lg-auto img-fluid"
+            alt="Bootstrap Themes"
+            width="700"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div className="col-lg-6">
+          <h1 className="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+            ABOUT INFRASTRUCUTER
+          </h1>
+          <p className="lead">
+            Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.
+          </p>
+
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default Infra;
