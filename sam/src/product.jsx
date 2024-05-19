@@ -13,7 +13,7 @@ function Product() {
         <div className="container-fluid py-5 ">
           <h1 className="display-5 fw-bold">Aluminium Distribution & Copper wound</h1>
           <p className="col-md-8 fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempora consequatur similique harum inventore expedita, dicta dolorum explicabo dolore omnis amet maiores quos quas, illum totam molestiae perferendis ad dolor?</p>
-          <button className="btn btn-outline-secondary fw-bold" type="button">KNOW MORE</button>
+          
         </div>
       </div>
 
