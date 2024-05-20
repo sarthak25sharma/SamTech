@@ -18,9 +18,10 @@ function App() {
     <>
     <Router>
     <Navbar/>
-    <Hero/>
+    
     <Routes>
         <Route path='/Home'   element={[
+          <Hero/>,
           <Cover key='Cover'/>,
           <Product key="Product" />,
           <Infra key="Infra" />,]}/>  
