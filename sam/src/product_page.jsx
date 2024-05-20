@@ -1,10 +1,13 @@
 import React from 'react';
 import './product_page.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import Hero_Products from './hero_products.jsx'
 function ProductSection() {
   return (
+    <div>
+    <Hero_Products/>
     <div className="container">
+      
       <h1 className="main-heading">Aluminium & Copper wound distribution</h1>
       <div className="main-products">
        
@@ -103,6 +106,7 @@ function ProductSection() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
