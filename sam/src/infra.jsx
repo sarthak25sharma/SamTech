@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import transition from './transition';
 const Infra = () => {
   return (
     <div className="container col-xxl-8 px-4 py-5">
@@ -28,4 +29,4 @@ const Infra = () => {
   );
 };
 
-export default Infra;
+export default transition(Infra);

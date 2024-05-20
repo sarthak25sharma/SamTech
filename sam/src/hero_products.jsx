@@ -1,4 +1,5 @@
 import "./Hero.css"
+import transition from "./transition";
 function Hero_Products () {
 
     return(
@@ -14,4 +15,4 @@ function Hero_Products () {
         </>
     );
 }
-export default Hero_Products;
+export default transition(Hero_Products);

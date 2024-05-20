@@ -1,4 +1,5 @@
 import "./Hero.css"
+import transition from "./transition";
 function Hero_Infra () {
 
     return(
@@ -14,4 +15,4 @@ function Hero_Infra () {
         </>
     );
 }
-export default Hero_Infra;
+export default transition(Hero_Infra);

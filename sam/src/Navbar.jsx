@@ -50,10 +50,16 @@ const Navbar = () => {
             <Link className='link'  to="/products">PRODUCTS</Link>
           </li>
           <li
+            onClick={() => handleMenuItemClick("ABOUT US")}
+            className={selectedItem === "ABOUT US" ? "active" : ""}
+          >
+            <Link className='link' to="/aboutus">QUALITY</Link>
+          </li>
+          <li
             onClick={() => handleMenuItemClick("INFRASTRUCTURE")}
             className={selectedItem === "INFRASTRUCTURE" ? "active" : ""}
           >
-            <Link className='link' to="/infrastructure">INFRASTRUCTURE</Link>
+            <Link className='link' to="/infrastructure">INFRASTRUCTURE & ABOUT US</Link>
           </li>
           {/* <li
             onClick={() => handleMenuItemClick("Business")}
@@ -61,18 +67,13 @@ const Navbar = () => {
           >
             <Link to="/business">BUSINESS</Link>
           </li> */}
-          <li
+          {/* <li
             onClick={() => handleMenuItemClick("CONTACT US")}
             className={selectedItem === "CONTACT US" ? "active" : ""}
           >
             <Link className='link' to="/contactus">CONTACT US</Link>
-          </li>
-          <li
-            onClick={() => handleMenuItemClick("ABOUT US")}
-            className={selectedItem === "ABOUT US" ? "active" : ""}
-          >
-            <Link className='link' to="/aboutus">ABOUT US</Link>
-          </li>
+          </li> */}
+
         </ul>
         <label
           htmlFor="menu"

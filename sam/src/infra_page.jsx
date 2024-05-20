@@ -1,5 +1,6 @@
 import './infra_page.css';
 import Hero_Infra from './hero_infra.jsx';
+import transition from './transition.js';
 const InfraPage = () => {
   return (
     <div>
@@ -195,4 +196,4 @@ performance standards.</p>
   );
 }
 
-export default InfraPage;
+export default (InfraPage);

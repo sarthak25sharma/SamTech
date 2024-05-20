@@ -1,6 +1,7 @@
 import React from 'react';
 import './product_page.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import transition from './transition.js';
 import Hero_Products from './hero_products.jsx'
 function ProductSection() {
   return (
@@ -111,4 +112,4 @@ function ProductSection() {
   );
 }
 
-export default ProductSection;
+export default transition(ProductSection);

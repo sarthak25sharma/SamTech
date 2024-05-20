@@ -1,4 +1,5 @@
 import "./Hero.css"
+import transition from "./transition";
 function Hero_About () {
 
     return(
@@ -14,4 +15,4 @@ function Hero_About () {
         </>
     );
 }
-export default Hero_About;
+export default transition(Hero_About);

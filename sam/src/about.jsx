@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Hero_About from './hero_about.jsx';
+import transition from "./transition.js";
 function AboutSection() {
   return (
     <div>
@@ -150,4 +151,4 @@ function AboutSection() {
   );
 }
 
-export default AboutSection;
+export default transition(AboutSection);

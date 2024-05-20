@@ -1,6 +1,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './cover.css';
+import  transition from './transition';
 const Cover = () => {
   return (
     <div>
@@ -62,4 +63,4 @@ const Cover = () => {
   );
 };
 
-export default Cover;
+export default transition(Cover);

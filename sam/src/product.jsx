@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import transition from './transition';
 
 function Product() {
   return (
@@ -42,4 +43,4 @@ function Product() {
   );
 }
 
-export default Product;
+export default transition(Product);
