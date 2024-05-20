@@ -1,7 +1,9 @@
 import './infra_page.css';
-
+import Hero_Infra from './hero_infra.jsx';
 const InfraPage = () => {
   return (
+    <div>
+      <Hero_Infra/>
     <div className="about-us-container">
       <div>
         <hr></hr>
@@ -188,6 +190,7 @@ performance standards.</p>
 
 
 
+    </div>
     </div>
   );
 }
