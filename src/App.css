@@ -1,0 +1,23 @@
+.blurry-in {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffff;
+    transform-origin: center;
+    opacity: 0;
+    filter: blur(10px);
+}
+
+.blurry-out {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #ffff;
+    transform-origin: center;
+    opacity: 0;
+    filter: blur(10px);
+}

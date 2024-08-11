@@ -1,0 +1,15 @@
+.cover-div{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.divh p{
+    font-size: 22px;
+}
+.divh h1{
+    font-size: 38px;
+}
+.bd-placeholder-img{
+    object-fit: cover;
+}
